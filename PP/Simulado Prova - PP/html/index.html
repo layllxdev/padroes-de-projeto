@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dragon Tamagotchi</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <main class="game">
+
+        <header class="game-header">
+            <h1>🐉 Dragon Tamagotchi</h1>
+            <p>Cuide do seu pequeno dragão!</p>
+        </header>
+
+        <section class="pet-area">
+
+            <div class="pet-name">
+                <h2 id="pet-name">Draco</h2>
+                <span id="pet-mood">Feliz</span>
+            </div>
+
+            <div class="pet-container">
+                <img
+                    id="pet-image"
+                    src="/images/dragao-normal.png"
+                    alt="Seu dragão"
+                >
+            </div>
+
+            <div class="message">
+                <p id="pet-message">
+                    Olá! Vamos brincar? 🔥
+                </p>
+            </div>
+
+        </section>
+
+        <section class="status">
+
+            <div class="status-item">
+                <div class="status-label">
+                    <span>🍖 Fome</span>
+                    <span id="hunger-value">80</span>
+                </div>
+
+                <div class="bar">
+                    <div id="hunger-bar" class="bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="status-item">
+                <div class="status-label">
+                    <span>❤️ Felicidade</span>
+                    <span id="happiness-value">80</span>
+                </div>
+
+                <div class="bar">
+                    <div id="happiness-bar" class="bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="status-item">
+                <div class="status-label">
+                    <span>⚡ Energia</span>
+                    <span id="energy-value">80</span>
+                </div>
+
+                <div class="bar">
+                    <div id="energy-bar" class="bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="status-item">
+                <div class="status-label">
+                    <span>💚 Saúde</span>
+                    <span id="health-value">100</span>
+                </div>
+
+                <div class="bar">
+                    <div id="health-bar" class="bar-fill"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="actions">
+
+            <button id="feed-button">
+                🍖 Alimentar
+            </button>
+
+            <button id="play-button">
+                🎮 Brincar
+            </button>
+
+            <button id="sleep-button">
+                😴 Dormir
+            </button>
+
+            <button id="pet-button">
+                ❤️ Carinho
+            </button>
+
+            <button id="fire-button">
+                🔥 Treinar Fogo
+            </button>
+
+            <button id="clothes-button">
+                👕 Trocar Roupa
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="/js/Pet.js"></script>
+    <script src="/js/PetManager.js"></script>
+    <script src="/js/FoodFactory.js"></script>
+    <script src="/js/Observer.js"></script>
+    <script src="/js/PetDecorator.js"></script>
+    <script src="/js/MoodStrategy.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

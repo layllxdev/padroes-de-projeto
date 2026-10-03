@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #171321;
+    color: white;
+}
+
+.game {
+    width: 420px;
+    min-height: 700px;
+
+    padding: 25px;
+
+    background: #241d35;
+
+    border: 2px solid #7255a8;
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-header h1 {
+    color: #c5a4ff;
+    margin-bottom: 8px;
+}
+
+.game-header p {
+    color: #b9b0c9;
+}
+
+.pet-area {
+    text-align: center;
+}
+
+.pet-name {
+    margin-bottom: 10px;
+}
+
+.pet-name h2 {
+    color: #ffffff;
+}
+
+.pet-name span {
+    color: #c5a4ff;
+}
+
+.pet-container {
+    width: 280px;
+    height: 280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #171321;
+
+    border: 3px solid #7255a8;
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+.pet-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center center;
+
+    display: block;
+}
+
+.message {
+    min-height: 60px;
+
+    margin: 15px 0;
+
+    padding: 15px;
+
+    background: #332849;
+
+    border-radius: 15px;
+}
+
+.message p {
+    color: #e8def8;
+}
+
+.status {
+    margin-top: 20px;
+}
+
+.status-item {
+    margin-bottom: 12px;
+}
+
+.status-label {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+}
+
+.bar {
+    width: 100%;
+    height: 12px;
+
+    background: #171321;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.bar-fill {
+    width: 80%;
+    height: 100%;
+
+    background: #a879e8;
+
+    border-radius: 10px;
+
+    transition: width 0.3s;
+}
+
+.actions {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.actions button {
+    padding: 12px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #7255a8;
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.actions button:hover {
+    background: #9270cc;
+    transform: translateY(-2px);
+}
+
+.actions button:active {
+    transform: translateY(0);
+}
