@@ -1,0 +1,23 @@
+<html>
+    <body style="background-color: rgb(236, 209, 229);">
+        <center>
+            Nome do aluno:
+            <br/>
+            <input id="Nome" style="width: 90%;" type="text" placeholder="Digite aqui"/> <br/> <br/>
+            Nota 1:
+            <br/>
+            <input id="nota1" style="width: 90%;" type="number" placeholder="Digite aqui"/> <br/> <br/>
+            Nota 2:
+            <br/>
+            <input id="nota2" style="width: 90%;" type="number" placeholder="Digite aqui"/> <br/> <br/>
+            Nota 3:
+            <input id="nota3" style="width: 90%;" type="number" placeholder="Digite aqui"/> <br/> <br/>
+            <button style="width: 60px" onclick="console.log('Aluno', Nome.value, 'com as notas:', nota1.value, ',', nota2.value, ',', nota3.value, ', e com a média:', parseFloat(nota1.value)+parseFloat(nota2.value)+parseFloat(nota3.value)/parseFloat(3))">
+                Salvar
+            </button>
+            <button onclick="Nome.value=''; nota1.value='' ">
+                Limpar
+            </button>
+        </center>
+    </body>
+</html>
